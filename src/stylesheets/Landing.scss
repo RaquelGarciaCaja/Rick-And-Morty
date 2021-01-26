@@ -1,0 +1,45 @@
+.landing {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  &--button {
+    opacity: 0.9;
+    font-size: 20px;
+    color: black;
+    height: 70px;
+    width: 200px;
+    border-radius: 30px;
+
+    -webkit-box-shadow: 0px 0px 35px 27px rgba(0, 0, 0, 0),
+      0px 0px 50px 33px rgba(76, 137, 66, 0.83);
+    box-shadow: 0px 0px 35px 27px rgba(0, 0, 0, 0), 0px 0px 50px 33px rgba(76, 137, 66, 0.83);
+    margin-top: 100px;
+    animation-name: button;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    @media all and(min-width:768px) {
+      height: 80px;
+      width: 300px;
+    }
+  }
+  // background-image: url("../image/fondo1.jpg");
+  // background-size: cover;
+  // background-position: center;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale (1.05);
+  }
+}

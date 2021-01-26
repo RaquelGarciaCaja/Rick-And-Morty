@@ -1,0 +1,38 @@
+.character {
+  &--conainer__img {
+    display: flex;
+    justify-content: center;
+  }
+  &--img {
+    text-align: center;
+    overflow: hidden;
+    height: 180px;
+    width: auto;
+    margin-top: 8px;
+    border-radius: 100px;
+    @media all and(min-width:768px) {
+      height: 180px;
+      width: auto;
+    }
+  }
+  &--title {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+      Geneva, Verdana, sans-serif;
+    text-decoration: none;
+  }
+  &--species {
+    text-decoration: none;
+    font-size: 22px;
+  }
+}
+
+.chracter--details--detail {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 8px 20px;
+}
+
+.textDecoration--none {
+  text-decoration: none;
+}

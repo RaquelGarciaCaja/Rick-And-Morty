@@ -1,0 +1,113 @@
+.details {
+  position: relative;
+  background-image: url("../image/fondo1.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 280px;
+  margin: 0 5px;
+  border-radius: 20px;
+  margin: 20px;
+  @media all and(min-width:768px) {
+    height: 350px;
+    margin: 0 100px;
+  }
+  @media all and(min-width:1200px) {
+    height: 360px;
+    margin: 0 300px;
+  }
+  &--button {
+    border-radius: 5px;
+    padding: 5px;
+    &:hover {
+      -webkit-box-shadow: 0px 8px 36px 14px #000000;
+      box-shadow: 0px 8px 36px 14px #000000;
+    }
+  }
+
+  &--arrows {
+    display: flex;
+    justify-content: space-around;
+    margin: 8px;
+    padding: 10px;
+    &__arrow {
+      margin: 8px;
+      color: white;
+      &:hover {
+        -webkit-box-shadow: 0px 0px 33px 21px #000000;
+        box-shadow: 0px 0px 33px 21px #000000;
+      }
+      @media all and(min-width:768px) {
+        font-size: 22px;
+      }
+    }
+  }
+  &--container {
+    &__img {
+      text-align: center;
+      padding: 15px;
+      height: 150px;
+      border-radius: 40px;
+      @media all and(min-width:768px) {
+        height: 220px;
+      }
+    }
+  }
+  &--titleAll {
+    text-align: center;
+  }
+  &--content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &--text {
+    font-size: 12px;
+    margin: 10px;
+    color: white;
+    @media all and(min-width:768px) {
+      font-size: 20px;
+    }
+  }
+  &--title {
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    @media all and(min-width:768px) {
+      font-size: 22px;
+      margin: 5px;
+    }
+  }
+
+  &--icons {
+    font-size: 10px;
+    margin: 0 5px;
+    @media all and(min-width:768px) {
+      font-size: 17px;
+      margin: 0 5px;
+    }
+  }
+  &--props {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+}
+.atras {
+  position: absolute;
+  bottom: 250px;
+  right: -15px;
+  font-size: 25px;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  @media all and(min-width:768px) {
+    bottom: 318px;
+    right: -15px;
+    font-size: 30px;
+  }
+  @media all and(min-width:1200px) {
+    bottom: 328px;
+  }
+}

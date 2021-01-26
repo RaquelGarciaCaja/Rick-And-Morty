@@ -1,0 +1,12 @@
+.footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  &--social {
+    font-size: 20px;
+  }
+  &--bold {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}

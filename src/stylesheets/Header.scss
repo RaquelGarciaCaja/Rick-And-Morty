@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  &--logo {
+    height: 80px;
+    @media all and(min-width:768px) {
+      height: 200px;
+    }
+    @media all and(min-width:1200px) {
+      height: 250px;
+    }
+  }
+
+  &--nave {
+    height: 40px;
+    animation-name: nave;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  @media all and(min-width:768px) {
+    height: 130px;
+  }
+  @media all and(min-width:1200px) {
+    height: 200px;
+  }
+}
+
+@keyframes nave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(260deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
